@@ -35,7 +35,7 @@ class Solution:
             complement = target - nums[i]
 
             if complement in dict:
-                return [i, dict[complement]]
+                return [dict[complement], i]
             
             dict[nums[i]] = i
         
